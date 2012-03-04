@@ -1,0 +1,5 @@
+== Agora Service ==
+
+Agora Exchange for Online Managed Services
+
+This is the agora-service Maven parent module.

@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.agora-exchange.service</groupId>
+  <artifactId>agora-service</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Agora Service</name>
+  <description>Agora Service Maven parent module</description>
+  <organization>
+    <name>Sakari A. Maaranen</name>
+  </organization>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <inceptionYear>2012</inceptionYear>
+  <scm>
+    <url>http://github.com/sakaal/agora-service</url>
+    <connection>scm:git:git://github.com/sakaal/agora-service.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/sakaal/agora-service.git</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>releases.m2.agora-exchange.org</id>
+      <name>Agora releases repository</name>
+      <url>scp://shell.sourceforge.net/home/project-web/agora-exchange/htdocs/m2/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots.m2.agora-exchange.org</id>
+      <name>Agora snapshots repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>scp://shell.sourceforge.net/home/project-web/agora-exchange/htdocs/m2/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <developers>
+    <developer>
+      <id>sakaal</id>
+      <name>Sakari A. Maaranen</name>
+      <organization>agora-exchange.org</organization>
+      <organizationUrl>http://www.agora-exchange.org</organizationUrl>
+      <roles>
+        <role>original author</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <contributors />
+
+  <repositories>
+    <repository>
+      <id>maven2-repository.dev.java.net</id>
+      <name>Java.net Repository for Maven</name>
+      <url>http://download.java.net/maven/2/</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
